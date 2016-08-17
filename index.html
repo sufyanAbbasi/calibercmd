@@ -1,72 +1,66 @@
-<!--
-@license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
-
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>My App</title>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-  <link rel="shortcut icon" sizes="32x32" href="/images/app-icon-32.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="sidebar">
+            <div id="title" class="centered">
+                <a href="#home">
+                    <!-- <img src="img/logo.gif" alt="Caliber Construction"> -->
+                    <h1>Caliber Construction<br>Management and Development</h1>
+                </a>
+                </div>
+            <div id="graphics"></div>
 
-  <meta name="theme-color" content="#fff">
-  <link rel="manifest" href="/manifest.json">
+            <div id="contents">
+                <h3 class="centered">Menu</h3>
+                <hr>
+                <ul></ul>
+                <br>
+                <address>
+                    <strong>Contact:</strong><br>
+                    &emsp;&emsp;&emsp;Farooq Abbasi<br>
+                    &emsp;&emsp;&emsp;<a href='mailto:calibercmd@gmail.com'>calibercmd@gmail.com</a><br>
+                    &emsp;&emsp;&emsp;<a href="tel:+14088020270">+1 (408) 802-0279</a>
+                </address>
+            </div>
+        </div>
+        
+        <div class="main-area">
+            <div id="header">
+                <h1>&emsp;</h1>
+            </div>
+            <iframe src="https://docs.google.com/document/d/1q3RhI0cArCzp3FbJDMLuhQ6SfeSjIQHJwUeqIeVqBTE/pub?embedded=true" frameborder="0"></iframe>
+        </div>
 
-  <script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
-    // setup Polymer options
-    window.Polymer = {lazyRegister: true, dom: 'shadow'};
-
-    // load webcomponents polyfills
-    (function() {
-      if ('registerElement' in document
-          && 'import' in document.createElement('link')
-          && 'content' in document.createElement('template')) {
-        // browser has web components
-      } else {
-        // polyfill web components
-        var e = document.createElement('script');
-        e.src = '/bower_components/webcomponentsjs/webcomponents-lite.min.js';
-        document.head.appendChild(e);
-      }
-    })();
-
-    // load pre-caching service worker
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/service-worker.js');
-      });
-    }
-
-  </script>
-
-  <link rel="import" href="/src/my-app.html">
-
-  <style>
-
-    body {
-      margin: 0;
-      font-family: 'Roboto', 'Noto', sans-serif;
-      line-height: 1.5;
-      min-height: 100vh;
-      background-color: #eee;
-    }
-
-  </style>
-
-</head>
-<body>
-
-  <my-app></my-app>
-
-</body>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <!--   <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script> -->
+    </body>
 </html>
